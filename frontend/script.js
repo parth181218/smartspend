@@ -3,7 +3,7 @@ document.getElementById("expenseForm").addEventListener("submit", async (e) => {
   const title = document.getElementById("title").value;
   const amount = parseFloat(document.getElementById("amount").value);
 
-  const res = await fetch("http://localhost:3001/api/expenses", {
+  const res = await fetch("http://13.219.79.177:3001/api/expenses", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ title, amount }),
