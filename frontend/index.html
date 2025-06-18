@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SmartSpend</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartSpend 💸</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>SmartSpend Tracker</h1>
-  <form id="expenseForm">
-    <input type="text" id="title" placeholder="Title" required>
-    <input type="number" id="amount" placeholder="Amount" required>
-    <button type="submit">Add Expense</button>
-  </form>
-  <ul id="expenseList"></ul>
+  <div class="container">
+    <h1>SmartSpend 💸</h1>
+    <input type="text" id="title" placeholder="Expense title" />
+    <input type="number" id="amount" placeholder="Amount ($)" />
+    <button onclick="addExpense()">Add Expense</button>
+
+    <div class="summary" id="summary">Loading...</div>
+    <div id="expenseList"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
